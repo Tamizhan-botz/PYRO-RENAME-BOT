@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Telegram Link : https://t.me/PYRO_BOTZ 
+Telegram Link : https://t.me/Team_Netflix1 
 Repo Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT
 License Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT/blob/main/LICENSE
 """
@@ -36,7 +36,7 @@ async def start(client, message):
     button = InlineKeyboardMarkup([[
         InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
         ],[
-        InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ⚡ ', url='https://t.me/Body_Soda_Links'),
+        InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ⚡ ', url='https://t.me/Team_Netflix1'),
         InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/Movie_Requestgrp')
         ],[
         InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
@@ -58,7 +58,7 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup([[
                 InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
                 ],[
-                InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ ⚡', url='https://t.me/Body_Soda_Links'),
+                InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ ⚡', url='https://t.me/Team_Netflix1'),
                 InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/Movie_Requestgrp')
                 ],[
                 InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
@@ -71,7 +71,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT")
+                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://t.me/Team_Netflix1")
                 ],[
                 InlineKeyboardButton("❤️‍🔥 Hᴏᴡ Tᴏ Uꜱᴇ❤️‍🔥", url='https://youtube.com/@tamildubmovies888')
                 ],[
@@ -85,7 +85,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT")
+                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://t.me/Team_Netflix1")
                 ],[
                 InlineKeyboardButton("🖥️ Hᴏᴡ Tᴏ Mᴀᴋᴇ", url="https://youtube.com/@tamildubmovies888")
                 ],[
@@ -99,7 +99,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT")
+                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://t.me/Team_Netflix1")
                 ],[
                 InlineKeyboardButton("🖥️ Hᴏᴡ Tᴏ Mᴀᴋᴇ", url="https://youtube.com/@tamildubmovies888")
                 ],[
