@@ -73,10 +73,10 @@ broadcast - Send Message To All Users (Admin Only)
 
 ## ❣️Thanks To
 
-<a href="https://t.me/lntechnical">
+<a href="https://t.me/Team_Netflix1)">
    <p> lntechnical TG</p>
   </a>
-<a href="https://youtube.com/c/LNtechnical">
+<a href="https://t.me/Team_Netflix1)">
    <p> lntechnical YT </p>
   </a>
 
