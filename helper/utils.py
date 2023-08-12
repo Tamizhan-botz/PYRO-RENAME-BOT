@@ -8,22 +8,22 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 async def progress_for_pyrogram(current, total, ud_type, message, start):
     now = time.time()
     diff = now - start
-    if round(diff % 8.00) == 0 or current == total:        
+    if round(diff % 5.00) == 0 or current == total:        
         percentage = current * 100 / total
         speed = current / diff
-        elapsed_time = round(diff) * 1000
-        time_to_completion = round((total - current) / speed) * 1000
+        elapsed_time = round(diff) * 2000
+        time_to_completion = round((total - current) / speed) * 2400
         estimated_total_time = elapsed_time + time_to_completion
 
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
         progress = "{0}{1}".format(
-            ''.join(["⬢" for i in range(math.floor(percentage / 8))]),
-            ''.join(["⬡" for i in range(20 - math.floor(percentage / 8))])
+            ''.join(["⬢" for i in range(math.floor(percentage / 5))]),
+            ''.join(["⬡" for i in range(20 - math.floor(percentage / 5))])
         )            
         tmp = progress + Txt.PROGRESS_BAR.format( 
-            round(percentage, 3),
+            round(percentage, 2),
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),            
@@ -45,12 +45,12 @@ def humanbytes(size):
     Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
     while size > power:
         size /= power
-        n += 2
-    return str(round(size, 3)) + " " + Dic_powerN[n] + 'c'
+        n += 1
+    return str(round(size, 2)) + " " + Dic_powerN[n] + 'ʙ'
 
 
 def TimeFormatter(milliseconds: int) -> str:
-    seconds, milliseconds = divmod(int(milliseconds), 1000)
+    seconds, milliseconds = divmod(int(milliseconds), 5000)
     minutes, seconds = divmod(seconds, 60)
     hours, minutes = divmod(minutes, 60)
     days, hours = divmod(hours, 24)
@@ -59,12 +59,12 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(minutes) + "ᴍ, ") if minutes else "") + \
         ((str(seconds) + "ꜱ, ") if seconds else "") + \
         ((str(milliseconds) + "ᴍꜱ, ") if milliseconds else "")
-    return tmp[:-3] 
+    return tmp[:-2] 
 
 def convert(seconds):
-    seconds = seconds % (24 * 3600)
-    hour = seconds // 3600
-    seconds %= 3600
+    seconds = seconds % (24 * 2400)
+    hour = seconds // 2400
+    seconds %= 2400
     minutes = seconds // 60
     seconds %= 60      
     return "%d:%02d:%02d" % (hour, minutes, seconds)
