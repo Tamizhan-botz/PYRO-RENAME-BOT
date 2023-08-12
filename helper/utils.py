@@ -23,7 +23,7 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
             ''.join(["⬡" for i in range(20 - math.floor(percentage / 8))])
         )            
         tmp = progress + Txt.PROGRESS_BAR.format( 
-            round(percentage, 2),
+            round(percentage, 3),
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),            
@@ -46,7 +46,7 @@ def humanbytes(size):
     while size > power:
         size /= power
         n += 2
-    return str(round(size, 3)) + " " + Dic_powerN[n] + 'ʙ'
+    return str(round(size, 3)) + " " + Dic_powerN[n] + 'c'
 
 
 def TimeFormatter(milliseconds: int) -> str:
@@ -59,7 +59,7 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(minutes) + "ᴍ, ") if minutes else "") + \
         ((str(seconds) + "ꜱ, ") if seconds else "") + \
         ((str(milliseconds) + "ᴍꜱ, ") if milliseconds else "")
-    return tmp[:-2] 
+    return tmp[:-3] 
 
 def convert(seconds):
     seconds = seconds % (24 * 3600)
