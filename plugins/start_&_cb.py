@@ -41,6 +41,8 @@ async def start(client, message):
         ],[
         InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
         InlineKeyboardButton('❤️ Hᴇʟᴩ ❤️', callback_data='help')
+        ],[
+        InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close")
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
@@ -56,14 +58,16 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([[
-                InlineKeyboardButton("🧩 Iɴғᴏ 🧩", callback_data='dev')
-                ],[
-                InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ ⚡', url='https://t.me/Doremon_Botz'),
-                InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/Doremon_Botz')
-                ],[
-                InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
-                InlineKeyboardButton('❤️ Hᴇʟᴩ ❤️', callback_data='help')
-            ]])
+        InlineKeyboardButton("🧩 Iɴғᴏ 🧩", callback_data='dev')
+        ],[
+        InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ⚡ ', url='https://t.me/Doremon_Botz'),
+        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/Doremon_Botz')
+        ],[
+        InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
+        InlineKeyboardButton('❤️ Hᴇʟᴩ ❤️', callback_data='help')
+        ],[
+        InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close")
+    ]])
         )
     elif data == "help":
         await query.message.edit_text(
@@ -71,7 +75,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
+                InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
             ]])            
         )
@@ -81,7 +85,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
+                InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
             ]])            
         )
@@ -91,7 +95,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
+                InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
             ]])          
         )
