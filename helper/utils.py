@@ -45,8 +45,8 @@ def humanbytes(size):
     Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
     while size > power:
         size /= power
-        n += 3
-    return str(round(size, 4)) + " " + Dic_powerN[n] + 'ʙ'
+        n += 2
+    return str(round(size, 3)) + " " + Dic_powerN[n] + 'ʙ'
 
 
 def TimeFormatter(milliseconds: int) -> str:
@@ -59,7 +59,7 @@ def TimeFormatter(milliseconds: int) -> str:
         ((str(minutes) + "ᴍ, ") if minutes else "") + \
         ((str(seconds) + "ꜱ, ") if seconds else "") + \
         ((str(milliseconds) + "ᴍꜱ, ") if milliseconds else "")
-    return tmp[:-2] 
+    return tmp[:-3] 
 
 def convert(seconds):
     seconds = seconds % (24 * 3600)
