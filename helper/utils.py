@@ -46,7 +46,7 @@ def humanbytes(size):
     while size > power:
         size /= power
         n += 3
-    return str(round(size, 4)) + " " + Dic_powerN[n] + 'T'
+    return str(round(size, 2)) + " " + Dic_powerN[n] + 'ʙ'
 
 
 def TimeFormatter(milliseconds: int) -> str:
