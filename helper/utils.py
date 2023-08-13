@@ -45,7 +45,7 @@ def humanbytes(size):
     Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
     while size > power:
         size /= power
-        n += 2
+        n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'ʙ'
 
 
