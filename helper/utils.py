@@ -40,12 +40,12 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
 def humanbytes(size):    
     if not size:
         return ""
-    power = 2**10
+    power = 4**10
     n = 0
     Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
     while size > power:
         size /= power
-        n += 2
+        n += 4
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'ʙ'
 
 
