@@ -34,13 +34,13 @@ async def start(client, message):
     user = message.from_user
     await db.add_user(client, message)                
     button = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🧩 Iɴғᴏ 🧩", callback_data='dev')
+        InlineKeyboardButton("⚙️ Sᴇᴛᴛɪɴɢs ⚙️", callback_data='help')
         ],[
         InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ⚡ ', url='https://t.me/Doremon_Botz'),
-        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/Doremon_Botz')
+        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/+5xScmjemXiI4Yjll')
         ],[
         InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
-        InlineKeyboardButton('❤️ Hᴇʟᴩ ❤️', callback_data='help')
+        InlineKeyboardButton('🤔 Hᴏᴡ Tᴏ Rᴇɴᴀᴍᴇ 🤔', url='https://t.me/how_to_downloadzz')
         ],[
         InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close")
     ]])
@@ -58,13 +58,13 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🧩 Iɴғᴏ 🧩", callback_data='dev')
+        InlineKeyboardButton("⚙️ Sᴇᴛᴛɪɴɢs ⚙️", callback_data='help')
         ],[
         InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ⚡ ', url='https://t.me/Doremon_Botz'),
-        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/Doremon_Botz')
+        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/+5xScmjemXiI4Yjll')
         ],[
         InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
-        InlineKeyboardButton('❤️ Hᴇʟᴩ ❤️', callback_data='help')
+        InlineKeyboardButton('🤔 Hᴏᴡ Tᴏ Rᴇɴᴀᴍᴇ 🤔', url='https://t.me/how_to_downloadzz')
         ],[
         InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close")
     ]])
