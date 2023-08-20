@@ -36,11 +36,11 @@ async def start(client, message):
     button = InlineKeyboardMarkup([[
         InlineKeyboardButton("⚙️ Sᴇᴛᴛɪɴɢs ⚙️", callback_data='help')
         ],[
-        InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ⚡ ', url='https://t.me/Doremon_Botz'),
-        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/+5xScmjemXiI4Yjll')
+        InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ Bᴏᴛ⚡ ', url='https://t.me/Doremon_Botz'),
+        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ Cʜᴀᴛ 🀄', url='https://t.me/+5xScmjemXiI4Yjll')
         ],[
-        InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
-        InlineKeyboardButton('🤔 Hᴏᴡ Tᴏ Rᴇɴᴀᴍᴇ 🤔', url='https://t.me/how_to_downloadzz')
+        InlineKeyboardButton('🔰 Aʙᴏᴜᴛ & Iɴғᴏ 🔰', callback_data='about'),
+        InlineKeyboardButton('🤖 𝟺ɢʙ Rᴇɴᴀᴍᴇʀ Bᴏᴛ 🤖', url='https://t.me/MegaRenamer_bot')
         ],[
         InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close")
     ]])
@@ -60,11 +60,11 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup([[
         InlineKeyboardButton("⚙️ Sᴇᴛᴛɪɴɢs ⚙️", callback_data='help')
         ],[
-        InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ⚡ ', url='https://t.me/Doremon_Botz'),
-        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ 🀄', url='https://t.me/+5xScmjemXiI4Yjll')
+        InlineKeyboardButton('⚡ Uᴩᴅᴀᴛᴇꜱ Bᴏᴛ⚡ ', url='https://t.me/Doremon_Botz'),
+        InlineKeyboardButton('🀄 Sᴜᴩᴩᴏʀᴛ Cʜᴀᴛ 🀄', url='https://t.me/+5xScmjemXiI4Yjll')
         ],[
-        InlineKeyboardButton('🔰 Aʙᴏᴜᴛ 🔰', callback_data='about'),
-        InlineKeyboardButton('🤔 Hᴏᴡ Tᴏ Rᴇɴᴀᴍᴇ 🤔', url='https://t.me/how_to_downloadzz')
+        InlineKeyboardButton('🔰 Aʙᴏᴜᴛ & Iɴғᴏ 🔰', callback_data='about'),
+        InlineKeyboardButton('🤖 𝟺ɢʙ Rᴇɴᴀᴍᴇʀ Bᴏᴛ 🤖', url='https://t.me/MegaRenamer_bot')
         ],[
         InlineKeyboardButton("❌ Cʟᴏꜱᴇ", callback_data = "close")
     ]])
