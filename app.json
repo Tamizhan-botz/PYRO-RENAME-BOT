@@ -7,11 +7,11 @@
     "env": {
         "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
-            "value": ""
+            "value": "29001906"
         },
         "API_HASH": {
             "description": "Your API Hash From my.telegram.org ",
-            "value": ""
+            "value": "ce6c965a54b3d5f393f84446c37a30d9"
         },
         "WEBHOOK": {
             "description": "if your server is need web service! value = True else value = False",
@@ -19,7 +19,7 @@
         },
         "FORCE_SUB": {
             "description": "Your force sub channel user name without [@] ",
-            "value": "",
+            "value": "Doremon_Botz",
             "required": false 
         },
         "BOT_TOKEN": {
@@ -35,7 +35,7 @@
         },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
-            "value": ""
+            "value": "mongodb+srv://OBITO:OBITO@cluster0.tvkdi7a.mongodb.net/?retryWrites=true&w=majority"
         },
         "DB_NAME":{ 
             "description":"Your Mongo DB Database Name ",
@@ -46,9 +46,12 @@
             "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
             "value": "",
             "required": false
-        }
-    },
-    "buildpacks": [
+        },
+        "TIME_GAP": {
+            "description": "Set the timegap in sec to reduce FloodWait. If you don't want to add leave empty. ",
+            "required": false
+        },
+        "buildpacks": [
         {
             "url": "heroku/python"
         }
