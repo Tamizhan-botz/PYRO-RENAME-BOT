@@ -153,6 +153,7 @@ async def doc(bot, update):
     os.remove(file_path) 
     if ph_path: os.remove(ph_path) 
 
+@Client.on_callback_query(filters.regex("upload"))
 async def take_screen_shot(video_file, output_directory, ttl):
     out_put_file_name = f"{output_directory}/{time.time()}.jpg"
     file_genertor_command = [
