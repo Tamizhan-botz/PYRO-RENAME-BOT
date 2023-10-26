@@ -7,11 +7,11 @@
     "env": {
         "API_ID": {
             "description": "Your APP ID From my.telegram.org ",
-            "value": "29001906"
+            "value": ""
         },
         "API_HASH": {
             "description": "Your API Hash From my.telegram.org ",
-            "value": "ce6c965a54b3d5f393f84446c37a30d9"
+            "value": ""
         },
         "WEBHOOK": {
             "description": "if your server is need web service! value = True else value = False",
@@ -19,7 +19,7 @@
         },
         "FORCE_SUB": {
             "description": "Your force sub channel user name without [@] ",
-            "value": "Doremon_Botz",
+            "value": "",
             "required": false 
         },
         "BOT_TOKEN": {
@@ -35,7 +35,7 @@
         },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
-            "value": "mongodb+srv://OBITO:OBITO@cluster0.tvkdi7a.mongodb.net/?retryWrites=true&w=majority"
+            "value": ""
         },
         "DB_NAME":{ 
             "description":"Your Mongo DB Database Name ",
